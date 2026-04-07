@@ -1,0 +1,37 @@
+/* =========================================================
+   DIPRIZIO FALEGNAMI — Design Tokens / CSS Variables
+   Da importare nel progetto finale (V2)
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  /* ─── COLOR PALETTE ───────────────────────────────────── */
+  --color-cream: #F2F0EB;
+  --color-charcoal: #1A1A1A;
+  --color-wood: #7C5038;
+  --color-wood-light: #A67255;
+  --color-grey-mid: #6B6560;
+  --color-white: #FFFFFF;
+
+  /* ─── TYPOGRAPHY ──────────────────────────────────────── */
+  --font-display: 'Playfair Display', serif; /* Titoli primari */
+  --font-quote: 'Cormorant Garamond', serif; /* Citazioni eleganti */
+  --font-body: 'Inter', sans-serif; /* Testo generale, UI, bottoni */
+
+  /* ─── SPACING (Scala lineare/esponenziale per respiro) ── */
+  --space-xxs: 0.25rem; /* 4px */
+  --space-xs:  0.5rem;  /* 8px */
+  --space-sm:  1rem;    /* 16px */
+  --space-md:  2rem;    /* 32px */
+  --space-lg:  4rem;    /* 64px */
+  --space-xl:  8rem;    /* 128px */
+
+  /* ─── BORDERS / SHAPES ────────────────────────────────── */
+  --radius-sharp: 0px; /* Stile pulito artigianale */
+  --border-thin: 1px solid rgba(26, 26, 26, 0.1); 
+
+  /* ─── TRANSITIONS ─────────────────────────────────────── */
+  --transition-smooth: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --transition-slow: 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}

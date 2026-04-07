@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diprizio Falegnami | Natural Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header fisso con comportamento scroll -->
+    <header class="main-header" id="site-header">
+        <div class="logo-box">
+            <img src="assets/logo/century gothic.svg" alt="Diprizio Falegnami" class="logo-img" id="site-logo">
+        </div>
+        <nav class="main-nav" id="main-nav">
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#chi-siamo">Storia</a></li>
+                <li><a href="#creazioni">Collezioni</a></li>
+                <li><a href="#pets">Pets</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+        <!-- Hamburger menu — sempre visibile su mobile -->
+        <button class="burger-btn" id="burger-btn" aria-label="Apri il menu di navigazione" aria-expanded="false">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </header>
+
+    <!-- Menu overlay mobile -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-hidden="true">
+        <button class="menu-close" id="menu-close" aria-label="Chiudi menu">
+            <span></span><span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#chi-siamo">Storia</a></li>
+                <li><a href="#creazioni">Collezioni</a></li>
+                <li><a href="#pets">Pets</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+        <div class="menu-footer">
+            <span>Diprizio Falegnami</span>
+            <span>Dal 1927</span>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section — Full Bleed, testo in basso a sinistra -->
+        <section id="hero" class="section-hero">
+            <div class="hero-image-wrapper hero-image-strip zoom-on-scroll">
+                <img src="assets/img/100_1207.JPG" alt="Diprizio Lavori" class="hero-img">
+                <img src="assets/img/DSC00010.jpg" alt="Diprizio Lavori" class="hero-img">
+                <img src="assets/img/lavori.jpg" alt="Diprizio Lavori" class="hero-img">
+                <img src="assets/img/kitchen-825318_1280.jpg" alt="Diprizio Lavori" class="hero-img">
+                <img src="assets/img/Wood-Insertions-Interior-Design.jpg" alt="Diprizio Lavori" class="hero-img">
+                <img src="assets/img/albero della vite.jpg" alt="Diprizio Lavori" class="hero-img">
+            </div>
+            <div class="hero-overlay">
+                <div class="hero-content reveal-text">
+                    <span class="eyebrow light">Dal 1927</span>
+                    <h2 class="hero-title">Il valore del<br>vero legno.</h2>
+                    <a href="#chi-siamo" class="hero-cta">Scopri la nostra storia</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chi Siamo — Dark Block Premium -->
+        <section id="chi-siamo" class="section-dark-solid">
+            <div class="container split-story">
+                <div class="story-text reveal-text">
+                    <span class="eyebrow">Dal 1927</span>
+                    <h3>Artigiani per scelta,<br>falegnami dalla nascita.</h3>
+                    <p>Dal 1927 ci occupiamo di realizzazione e ristrutturazione di elementi in legno e arredamento d'interni. Abbiamo deciso di optare per la qualità diversificando ogni singola creazione dalla precedente per lasciare un tocco unico in ogni spazio e prodotto creato insieme ai nostri clienti.</p>
+                    <p>Circondati da vari professionisti del settore, giorno dopo giorno da quasi 100 anni cerchiamo di animare una realtà artigianale in grado di offrire un servizio di arredamento che possa unire l'esigenza di un prodotto dal design unico alla rinascita del mobile fatto a mano.</p>
+                    <p>Nel mondo della globalizzazione e delle macchine navighiamo in controtendenza per mettere nelle vostre mani il nostro sapere artigiano traducendo le vostre idee in creazioni uniche.</p>
+                </div>
+                <div class="story-image reveal-scale">
+                    <img src="assets/img/falegname.jpg" alt="Artigiano Diprizio nella bottega" class="story-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Showcase (Vanilla Gallery4) -->
+        <!-- Showcase 1: Creazioni (Vanilla Gallery4) -->
+        <section id="creazioni" class="section-light gallery-section" style="padding-top: 6rem;">
+            <div class="container section-padded" style="padding-bottom: 1rem; padding-top: 2rem;">
+                <div class="gallery-header">
+                    <div class="gallery-header-text">
+                        <span class="eyebrow dark">I Nostri Progetti</span>
+                        <h2 class="gallery-title">Eccellenza<br>Artigianale</h2>
+                        <p class="gallery-desc">Esplora come la falegnameria tradizionale si fonde con il design per creare spazi unici, arredamenti su misura e strutture in vero legno costruite per durare una vita intera.</p>
+                    </div>
+                    <div class="gallery-header-nav hidden-mobile">
+                        <button class="gallery-btn embla__prev" aria-label="Precedente">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button class="gallery-btn embla__next" aria-label="Successivo">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="embla gallery-embla container">
+                <div class="embla__container">
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/kitchen-825318_1280.jpg" alt="Cucine su Misura" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">Cucine Artigianali</h3>
+                                    <p class="gallery-card-desc">Progettiamo cucine in vero legno capaci di resistere alle sfide di ogni giorno, unendo estetica raffinata e praticità.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/Wood-Insertions-Interior-Design.jpg" alt="Design Interni" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">Interior Design</h3>
+                                    <p class="gallery-card-desc">Boiserie contemporanee e inserti che elevano gli ambienti, portando calore ed eleganza in ogni stile di interior design.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/primavera..jpg" alt="Mobili Design" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">Arredi Iconici</h3>
+                                    <p class="gallery-card-desc">Produciamo elementi di arredo dalle linee esclusive, pensati per catturare la scena e durare nel tempo.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/Paulicelli Table.jpg" alt="Tavoli in legno massello" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">Tavoli in Essenza</h3>
+                                    <p class="gallery-card-desc">Ideiamo tavoli da pranzo realizzati in essenze pregiate, con resine e finiture naturali, perfetti per la convivialità.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/Wood-in-Design-Bloom-Coffee-Table.jpg" alt="Bloom Coffee Table" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">Tavolini da Salotto</h3>
+                                    <p class="gallery-card-desc">Tavolini eleganti nati dall'incontro del legno con le resine trasparenti e le forme più contemporanee.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-dots embla__dots"></div>
+        </section>
+
+        <!-- Showcase 2: FD for Pets -->
+        <section id="pets" class="section-light gallery-section">
+            <div class="container section-padded" style="padding-bottom: 1rem; padding-top: 2rem;">
+                <div class="gallery-header">
+                    <div class="gallery-header-text">
+                        <span class="eyebrow dark">La Linea Esclusiva</span>
+                        <h2 class="gallery-title">FD for Pets</h2>
+                        <p class="gallery-desc">Abbiamo dedicato una linea speciale ai nostri compagni di vita. Materiali naturali, robustezza artigianale e design che si integra perfettamente nel tuo arredamento.</p>
+                    </div>
+                    <div class="gallery-header-nav hidden-mobile">
+                        <button class="gallery-btn embla__prev" aria-label="Precedente">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button class="gallery-btn embla__next" aria-label="Successivo">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="embla gallery-embla container">
+                <div class="embla__container">
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/cuccia menzera 2.jpg" alt="Cuccia da Esterno in Legno" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">Cucce da Esterno</h3>
+                                    <p class="gallery-card-desc">Costruite artigianalmente per resistere alle intemperie senza perdere il lato estetico e garantire isolamento termico ai tuoi compagni di vita.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/..jpg.jpg" alt="Rifugi per Gatti" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">Mobili per Gatti</h3>
+                                    <p class="gallery-card-desc">Strutture pensate per il relax e il gioco, perfettamente mimetizzate e integrate con i mobili del soggiorno.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/...jpg.jpg" alt="Strutture Personalizzate per Cani" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">Letti Rialzati per Cani</h3>
+                                    <p class="gallery-card-desc">Riposare isolati da umidità e freddo. Design sofisticato con cuscini e materassi ergonomici e basi in vero legno.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-dots embla__dots"></div>
+        </section>
+
+        <!-- Showcase 3: Illuminazione -->
+        <section id="illuminazione" class="section-light gallery-section" style="padding-bottom: 6rem;">
+            <div class="container section-padded" style="padding-bottom: 1rem; padding-top: 2rem;">
+                <div class="gallery-header">
+                    <div class="gallery-header-text">
+                        <span class="eyebrow dark">Design della Luce</span>
+                        <h2 class="gallery-title">Illuminazione</h2>
+                        <p class="gallery-desc">Oggetti luminosi nati dall'estro creativo. Usiamo le forme naturali del legno, unite a resine e luci LED, per dare un'atmosfera magica e calda ad ogni ambiente.</p>
+                    </div>
+                    <div class="gallery-header-nav hidden-mobile">
+                        <button class="gallery-btn embla__prev" aria-label="Precedente">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                        </button>
+                        <button class="gallery-btn embla__next" aria-label="Successivo">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="embla gallery-embla container">
+                <div class="embla__container">
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/verticalamp.jpg" alt="Lampade Verticali" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">Verticalamp</h3>
+                                    <p class="gallery-card-desc">Lampade da terra dal taglio verticale unico che proiettano giochi di luce e accendono la trama del legno dal basso verso l'alto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/GLOBO RGB.jpg" alt="Globo RGB" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">Globo Luminoso</h3>
+                                    <p class="gallery-card-desc">Sfere in legno e resina epossidica controllabili tramite smartphone. Per diffondere luce cromatica RGB nell'ambiente.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/IMG_0188_edited.jpg" alt="Applique Sospese" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">Applique da Parete</h3>
+                                    <p class="gallery-card-desc">Combinazioni armoniose di legno scalfito e luce soffusa che evidenziano i dettagli del taglio naturale dell'albero sulle pareti.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embla__slide">
+                        <div class="gallery-card group">
+                            <div class="gallery-card-inner">
+                                <img src="assets/img/IMG_0227_edited.jpg" alt="Centro Tavola LED" class="gallery-card-img">
+                                <div class="gallery-card-gradient"></div>
+                                <div class="gallery-card-content">
+                                    <h3 class="gallery-card-title">LED Design</h3>
+                                    <p class="gallery-card-desc">Creazioni minimaliste pensate per modernizzare con un tocco rustico scrivanie, isole cucina, o stanze da letto.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-dots embla__dots"></div>
+        </section>
+
+        <!-- Contatti — Dark Block -->
+        <section id="contatti" class="section-dark-solid">
+            <div class="map-massive reveal-scale">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2959.043513364239!2d16.914981878342713!3d41.047402014138405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1347ebaaba0fc9ad%3A0xe67bc5b2a09c2a63!2sVia%2C%20Via%20Casamassima%2C%2054%2C%2070010%20Capurso%20BA!5e0!3m2!1sit!2sit!4v1714000000000!5m2!1sit!2sit" style="width:100%;height:100%;border:0;filter:grayscale(100%) invert(90%) contrast(1.2);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="container section-padded contact-dual-grid">
+                <div class="contact-info reveal-text">
+                    <span class="eyebrow">Info &amp; Contatti</span>
+                    <h3>Contattaci</h3>
+                    <p class="big-contact">334.52.78.832</p>
+                    <p class="big-contact">info@dipriziofalegnami.com</p>
+                    <div class="address-box">
+                        <p><strong>Laboratorio &amp; Showroom:</strong></p>
+                        <p>Via Casamassima, 54</p>
+                        <p>70010 Capurso (BA)</p>
+                        <p>Tel. 080.455.35.77</p>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a>
+                        <span aria-hidden="true">—</span>
+                        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-box reveal-text">
+                    <form class="minimal-form" id="contact-form">
+                        <div class="field-group">
+                            <label for="nome">Nome</label>
+                            <input id="nome" type="text" placeholder="es. Marco Ferretti">
+                        </div>
+                        <div class="field-group">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" placeholder="es. marco@email.com">
+                        </div>
+                        <div class="field-group">
+                            <label for="messaggio">Messaggio</label>
+                            <textarea id="messaggio" rows="4" placeholder="Descrivi il progetto che hai in mente..."></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Invia Richiesta</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer con separatore visibile -->
+    <footer class="main-footer dark-footer">
+        <div class="footer-divider"></div>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo/century gothic.svg" alt="Diprizio Falegnami" class="footer-logo-img">
+            </div>
+            <div class="footer-copy">
+                <p>© 2026 Diprizio Falegnami. P.IVA 04567890721. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
