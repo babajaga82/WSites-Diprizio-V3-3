@@ -916,3 +916,108 @@ a:hover { opacity: 0.7; }
         flex: 0 0 50%;
     }
 }
+
+
+/* ══════════════════════════════════════════
+   MOBILE / TABLET FIX — appended
+══════════════════════════════════════════ */
+
+/* Fix mix-blend-mode: logo sempre bianco, senza blend */
+.logo-img {
+    mix-blend-mode: normal;
+    filter: brightness(0) invert(1);
+}
+
+/* Fix: hero image strip — colonne ridotte su mobile */
+@media (max-width: 1024px) {
+    .hero-image-strip {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-image-strip {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-image-strip {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Fix: 100vh → 100dvh per iOS Safari */
+.h-screen { height: 100dvh !important; }
+.min-h-screen { min-height: 100dvh !important; }
+.section-hero { height: 100dvh; }
+
+/* Parallax: disabilita effetti JS su mobile (CSS reset inline styles) */
+@media (max-width: 768px) {
+    .parallax-img-container {
+        opacity: 1 !important;
+        clip-path: none !important;
+        will-change: auto;
+    }
+    .parallax-text-container {
+        transform: none !important;
+        will-change: auto;
+    }
+    .parallax-section {
+        align-items: flex-start;
+    }
+    .parallax-img {
+        width: 100%;
+        height: 300px;
+    }
+    /* Map altezza ridotta */
+    .map-massive { height: 35vh; }
+}
+
+/* Smartphone — ≤ 480px */
+@media (max-width: 480px) {
+    .hero-overlay {
+        padding: 0 var(--space-sm) var(--space-md);
+    }
+    .split-story { grid-template-columns: 1fr; }
+    .story-image { min-height: 280px; }
+    .contact-dual-grid { grid-template-columns: 1fr; }
+    .footer-content {
+        flex-direction: column;
+        gap: var(--space-md);
+        align-items: flex-start;
+    }
+    .logo-img { min-width: 140px; }
+    .main-header.scrolled .logo-img { min-width: 100px; }
+}
+
+/* Touch: no hover scale */
+@media (hover: none) {
+    .story-image:hover .story-img { transform: none; }
+    .grid-item:hover .grid-img { transform: none; }
+}
+
+
+/* Fix gallery card su smartphone */
+@media (max-width: 480px) {
+    .gallery-card-inner {
+        min-height: 18rem;
+    }
+    .gallery-card-desc {
+        display: none; /* troppo testo su schermi piccoli */
+    }
+    .gallery-card-content { padding: 1rem; }
+    .gallery-card-title { font-size: 1rem; padding-top: 0.5rem; }
+}
+
+/* Gallery dots più grandi su touch */
+@media (hover: none) {
+    .gallery-dot {
+        width: 10px;
+        height: 10px;
+    }
+    .gallery-btn {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
